@@ -1,13 +1,15 @@
-document.getElementById('company').innerHTML = "Joe's Bed and Breakfast";
+document.querySelector('header > h1').innerText = "Inspector Clouseau"
+document.querySelector('header > h2').innerText = "The greatest detective of all time."
 
 
+function reDisplay {
+    
 
-document.querySelector('header > h2').innerText = "Decent food!"
+let windowSizes = `Window size is ${window.innerWidth} pixels wide by ${window.innerHeight} pixels tall`
 
-let userName = prompt("What is your name?")
+let offset = `Window offset is ${window.screenX} from the left edge and ${window.screenY} pixels from the top of the display.`
 
-//let message = "Hello " + userName + ", welcome to the finest lodging in Utah."
-
-let message = `Hello ${userName}, welcome to the finest lodging int Utah.`
-
-document.querySelector ('#greeting').innerText = message
+let myWindow = document.querySelector('#myWindow').innerText = `${windowSizes} \n 
+${offset}`
+}
+reDisplay()
